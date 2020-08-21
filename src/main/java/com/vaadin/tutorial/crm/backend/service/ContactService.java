@@ -56,6 +56,7 @@ public class ContactService {
 
     @PostConstruct
     public void populateTestData() {
+
         if (companyRepository.count() == 0) {
             companyRepository.saveAll(
                     Stream.of("Path-Way Electronics", "E-Tech Management", "Path-E-Tech Management")
